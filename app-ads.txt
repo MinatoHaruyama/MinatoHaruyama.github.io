@@ -1,10 +1,1 @@
-# app-ads.txt for つぶやきEnglish
-#
-# このファイルの内容は AdMob 管理画面から取得してください:
-# 1. AdMob にログイン
-# 2. 左メニューの「すべてのアプリ」を選択
-# 3. 「app-ads.txt」タブをクリック
-# 4. 表示されたコードをこのファイルに貼り付け
-#
-# 例:
-# google.com, pub-XXXXXXXXXXXXXXXX, DIRECT, f08c47fec0942fa0
+google.com, pub-2304262428376037, DIRECT, f08c47fec0942fa0
