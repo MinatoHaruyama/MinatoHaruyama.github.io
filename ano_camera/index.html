@@ -389,6 +389,17 @@ function setLang(lang) {
     if (tl) tl.textContent = taglines[lang] || taglines['en'];
     document.documentElement.lang = lang;
     localStorage.setItem('ano_camera_lang', lang);
+    var url = new URL(window.location);
+    url.searchParams.set('lang', lang);
+    history.replaceState(null, '', url);
+    document.querySelectorAll('a[href]').forEach(function(a) {
+        var href = a.getAttribute('href');
+        if (!href || href.startsWith('mailto:') || href.startsWith('tel:') || href.startsWith('#')) return;
+        if (href.startsWith('http')) { try { var u = new URL(href); if (u.origin !== location.origin) return; u.searchParams.set('lang', lang); a.setAttribute('href', u.toString()); } catch(e) {} return; }
+        var base = href.split('?')[0].split('#')[0];
+        var hash = href.includes('#') ? '#' + href.split('#')[1] : '';
+        a.setAttribute('href', base + '?lang=' + lang + hash);
+    });
 }
 
 (function() {
