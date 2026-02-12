@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - Ano Camera</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.8;
+            color: #333;
+            background-color: #F5F5F5;
+        }
+        .container { max-width: 800px; margin: 0 auto; padding: 40px 20px; }
+        header { margin-bottom: 32px; }
+        .back-link {
+            display: inline-flex; align-items: center; gap: 8px;
+            color: #1a1a1a; text-decoration: none; font-size: 14px; margin-bottom: 24px;
+        }
+        .back-link:hover { text-decoration: underline; }
+        h1 { font-size: 28px; color: #1a1a1a; margin-bottom: 8px; }
+        .last-updated { font-size: 14px; color: #888; }
+        .lang-switcher {
+            display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 24px;
+        }
+        .lang-switcher button {
+            background: white; border: 1px solid #ddd; border-radius: 8px;
+            padding: 6px 14px; font-size: 13px; cursor: pointer; color: #555;
+            transition: all 0.2s;
+        }
+        .lang-switcher button:hover { border-color: #999; }
+        .lang-switcher button.active {
+            background: #1a1a1a; color: white; border-color: #1a1a1a;
+        }
+        .content {
+            background: white; border-radius: 16px; padding: 40px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+        }
+        h2 {
+            font-size: 18px; color: #333; margin-top: 32px; margin-bottom: 16px;
+            padding-bottom: 8px; border-bottom: 1px solid #E5E7EB;
+        }
+        h2:first-child { margin-top: 0; }
+        p { margin-bottom: 16px; color: #555; }
+        ul { margin-left: 24px; margin-bottom: 16px; }
+        li { margin-bottom: 8px; color: #555; }
+        .highlight {
+            background: #FFF8E1; padding: 16px 20px; border-radius: 8px;
+            border-left: 4px solid #FFA000; margin: 16px 0;
+        }
+        .highlight p { margin-bottom: 0; }
+        footer { text-align: center; padding: 32px 20px; color: #888; font-size: 14px; }
+        a { color: #1a1a1a; }
+        .lang-section { display: none; }
+        .lang-section.active { display: block; }
+        @media (max-width: 600px) {
+            h1 { font-size: 24px; }
+            .content { padding: 24px; }
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <header>
+        <a href="index.html" class="back-link">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z"/></svg>
+            <span data-i18n="back">Back</span>
+        </a>
+        <h1 data-i18n="title">Privacy Policy</h1>
+        <p class="last-updated" data-i18n="updated">Last updated: February 10, 2026</p>
+    </header>
+
+    <div class="lang-switcher">
+        <button onclick="setLang('ja')" data-lang="ja">日本語</button>
+        <button onclick="setLang('en')" data-lang="en">English</button>
+        <button onclick="setLang('fr')" data-lang="fr">Français</button>
+        <button onclick="setLang('de')" data-lang="de">Deutsch</button>
+        <button onclick="setLang('it')" data-lang="it">Italiano</button>
+        <button onclick="setLang('ko')" data-lang="ko">한국어</button>
+        <button onclick="setLang('zh-Hant')" data-lang="zh-Hant">繁體中文</button>
+        <button onclick="setLang('zh-Hans')" data-lang="zh-Hans">简体中文</button>
+        <button onclick="setLang('th')" data-lang="th">ภาษาไทย</button>
+    </div>
+
+    <div class="content">
+
+<!-- Japanese -->
+<div class="lang-section" id="lang-ja">
+<p>「Ano Camera（あのカメラ）」（以下「本アプリ」）は、ユーザーのプライバシーを最大限に尊重して設計されています。本プライバシーポリシーでは、本アプリにおけるデータの取り扱いについて説明します。</p>
+
+<h2>1. 基本方針</h2>
+<div class="highlight"><p>本アプリは、ユーザーのデータを一切収集・送信しません。すべてのデータ処理はお使いのデバイス上でのみ行われます。</p></div>
+
+<h2>2. デバイス上に保存されるデータ</h2>
+<p>本アプリは、以下の設定情報をデバイス内（UserDefaults）に保存します。</p>
+<ul>
+    <li><strong>ユーザー名:</strong> ウォーターマークに表示する名前</li>
+    <li><strong>デバイスモデル名:</strong> ウォーターマークに表示するデバイス名</li>
+    <li><strong>表示設定:</strong> GPS座標・日時の表示/非表示設定</li>
+    <li><strong>スタイル設定:</strong> フィルタースタイルの選択</li>
+    <li><strong>言語設定:</strong> アプリ内表示言語</li>
+</ul>
+<p>これらのデータはデバイスの外部に送信されることはありません。アプリを削除すると、すべてのデータが消去されます。</p>
+
+<h2>3. カメラ・写真へのアクセス</h2>
+<p>本アプリは、写真の撮影およびウォーターマーク付き写真の保存のためにカメラとフォトライブラリへのアクセスを要求します。撮影された写真およびフォトライブラリの写真は、デバイス上でのみ処理され、外部に送信されることはありません。</p>
+
+<h2>4. 位置情報について</h2>
+<p>本アプリは、写真のウォーターマークにGPS座標を表示するために位置情報を使用します。</p>
+<div class="highlight"><p><strong>重要:</strong> GPS座標はウォーターマークとして写真のピクセルに恒久的に焼き込まれます。一度保存すると、画像編集やEXIF削除では除去できません。SNS等への共有時には十分ご注意ください。GPS表示は設定画面からオフにでき、デフォルトではオフになっています。</p></div>
+<p>位置情報はデバイス上でのみ使用され、外部のサーバーに送信されることはありません。</p>
+
+<h2>5. ネットワーク通信</h2>
+<p>本アプリは、いかなるネットワーク通信も行いません。広告の表示、分析ツール、トラッキングツール等は一切使用していません。</p>
+
+<h2>6. 第三者へのデータ提供</h2>
+<p>本アプリは、ユーザーのデータを第三者に提供、販売、共有することはありません。</p>
+
+<h2>7. お子様のプライバシー</h2>
+<p>本アプリは、意図的に13歳未満のお子様から個人情報を収集することはありません。</p>
+
+<h2>8. データの削除</h2>
+<p>アプリをデバイスから削除すると、すべての設定データが自動的に消去されます。</p>
+
+<h2>9. プライバシーポリシーの変更</h2>
+<p>本ポリシーは必要に応じて変更されることがあります。重要な変更がある場合は、本ページにて通知いたします。</p>
+
+<h2>10. 特定商取引法に基づく表記</h2>
+<ul>
+    <li><strong>事業者名:</strong> 春山 湊人</li>
+    <li><strong>所在地:</strong> 請求があったときに遅滞なく開示いたします</li>
+    <li><strong>電話番号:</strong> 請求があったときに遅滞なく開示いたします</li>
+    <li><strong>メール:</strong> <a href="mailto:haruyama.3710@gmail.com">haruyama.3710@gmail.com</a></li>
+    <li><strong>販売価格:</strong> App Store の販売ページに表示された価格</li>
+    <li><strong>支払方法:</strong> Apple ID に登録された支払方法</li>
+    <li><strong>返品・キャンセル:</strong> App Store の返金ポリシーに準じます</li>
+</ul>
+
+<h2>11. お問い合わせ</h2>
+<p>本プライバシーポリシーに関するお問い合わせは、以下までご連絡ください。</p>
+<ul>
+    <li><strong>メール:</strong> <a href="mailto:haruyama.3710@gmail.com">haruyama.3710@gmail.com</a></li>
+</ul>
+</div>
+
+<!-- English -->
+<div class="lang-section" id="lang-en">
+<p>"Ano Camera" (hereinafter "the App") is designed with maximum respect for user privacy. This Privacy Policy explains how data is handled within the App.</p>
+
+<h2>1. Core Principle</h2>
+<div class="highlight"><p>The App does not collect or transmit any user data. All data processing occurs exclusively on your device.</p></div>
+
+<h2>2. Data Stored on Device</h2>
+<p>The App stores the following settings on your device (UserDefaults):</p>
+<ul>
+    <li><strong>User name:</strong> Name displayed on watermarks</li>
+    <li><strong>Device model name:</strong> Device name displayed on watermarks</li>
+    <li><strong>Display settings:</strong> GPS coordinates and date/time visibility</li>
+    <li><strong>Style settings:</strong> Filter style selection</li>
+    <li><strong>Language settings:</strong> In-app display language</li>
+</ul>
+<p>This data is never transmitted outside your device. Deleting the app removes all data.</p>
+
+<h2>3. Camera and Photo Access</h2>
+<p>The App requests access to your camera and photo library to capture photos and save watermarked photos. Photos are processed only on your device and are never transmitted externally.</p>
+
+<h2>4. Location Data</h2>
+<p>The App uses location data to display GPS coordinates on photo watermarks.</p>
+<div class="highlight"><p><strong>Important:</strong> GPS coordinates are permanently embedded into the watermark pixels of your photo. Once saved, they cannot be removed by image editing or EXIF removal. Please exercise caution when sharing on social media. GPS display can be disabled in settings and is off by default.</p></div>
+<p>Location data is used only on your device and is never sent to external servers.</p>
+
+<h2>5. Network Communication</h2>
+<p>The App does not perform any network communication. No advertisements, analytics tools, or tracking tools are used.</p>
+
+<h2>6. Third-Party Data Sharing</h2>
+<p>The App does not provide, sell, or share user data with any third parties.</p>
+
+<h2>7. Children's Privacy</h2>
+<p>The App does not intentionally collect personal information from children under 13.</p>
+
+<h2>8. Data Deletion</h2>
+<p>Deleting the app from your device automatically removes all settings data.</p>
+
+<h2>9. Your Rights</h2>
+<p>Depending on your jurisdiction, you may have rights regarding your personal data, including the right to access, correct, or delete your data. Since the App does not collect or store any data outside your device, there is no data for us to access, correct, or delete. Uninstalling the app removes all locally stored preferences.</p>
+
+<h2>10. Changes to This Policy</h2>
+<p>This policy may be updated as needed. Significant changes will be communicated on this page.</p>
+
+<h2>11. Contact</h2>
+<p>For questions about this Privacy Policy, please contact us at:</p>
+<ul>
+    <li><strong>Email:</strong> <a href="mailto:haruyama.3710@gmail.com">haruyama.3710@gmail.com</a></li>
+</ul>
+</div>
+
+<!-- French -->
+<div class="lang-section" id="lang-fr">
+<p>"Ano Camera" (ci-apres "l'Application") est concue dans le plus grand respect de la vie privee des utilisateurs. La presente politique de confidentialite explique comment les donnees sont traitees dans l'Application.</p>
+
+<h2>1. Principe fondamental</h2>
+<div class="highlight"><p>L'Application ne collecte ni ne transmet aucune donnee utilisateur. Tout le traitement des donnees s'effectue exclusivement sur votre appareil.</p></div>
+
+<h2>2. Donnees stockees sur l'appareil</h2>
+<p>L'Application stocke les parametres suivants sur votre appareil (UserDefaults) :</p>
+<ul>
+    <li><strong>Nom d'utilisateur :</strong> Nom affiche sur les filigranes</li>
+    <li><strong>Modele d'appareil :</strong> Nom de l'appareil affiche sur les filigranes</li>
+    <li><strong>Parametres d'affichage :</strong> Visibilite des coordonnees GPS et de la date/heure</li>
+    <li><strong>Parametres de style :</strong> Selection du style de filtre</li>
+    <li><strong>Parametres de langue :</strong> Langue d'affichage de l'application</li>
+</ul>
+<p>Ces donnees ne sont jamais transmises en dehors de votre appareil. La suppression de l'application efface toutes les donnees.</p>
+
+<h2>3. Acces a la camera et aux photos</h2>
+<p>L'Application demande l'acces a votre camera et a votre phototheque pour capturer des photos et sauvegarder des photos avec filigrane. Les photos sont traitees uniquement sur votre appareil.</p>
+
+<h2>4. Donnees de localisation</h2>
+<p>L'Application utilise les donnees de localisation pour afficher les coordonnees GPS sur les filigranes des photos.</p>
+<div class="highlight"><p><strong>Important :</strong> Les coordonnees GPS sont integrees de maniere permanente dans les pixels du filigrane. Une fois sauvegardees, elles ne peuvent pas etre supprimees par edition d'image ou suppression EXIF. Soyez prudent lors du partage sur les reseaux sociaux. L'affichage GPS peut etre desactive dans les reglages et est desactive par defaut.</p></div>
+
+<h2>5. Communication reseau</h2>
+<p>L'Application n'effectue aucune communication reseau. Aucune publicite, outil d'analyse ou de suivi n'est utilise.</p>
+
+<h2>6. Partage de donnees avec des tiers</h2>
+<p>L'Application ne fournit, ne vend ni ne partage les donnees des utilisateurs avec des tiers.</p>
+
+<h2>7. Vos droits (RGPD)</h2>
+<p>Conformement au Reglement General sur la Protection des Donnees (RGPD), vous disposez de droits sur vos donnees personnelles. L'Application ne collectant aucune donnee en dehors de votre appareil, il n'existe aucune donnee a consulter, corriger ou supprimer de notre cote. La desinstallation de l'application supprime toutes les preferences stockees localement.</p>
+
+<h2>8. Modifications de cette politique</h2>
+<p>Cette politique peut etre mise a jour si necessaire. Les modifications importantes seront communiquees sur cette page.</p>
+
+<h2>9. Contact</h2>
+<p>Pour toute question concernant cette politique de confidentialite :</p>
+<ul>
+    <li><strong>Email :</strong> <a href="mailto:haruyama.3710@gmail.com">haruyama.3710@gmail.com</a></li>
+</ul>
+</div>
+
+<!-- German -->
+<div class="lang-section" id="lang-de">
+<p>"Ano Camera" (nachfolgend "die App") wurde mit grosstem Respekt fur die Privatsphare der Nutzer entwickelt. Diese Datenschutzrichtlinie erlautert den Umgang mit Daten in der App.</p>
+
+<h2>1. Grundprinzip</h2>
+<div class="highlight"><p>Die App erhebt und ubertragt keinerlei Nutzerdaten. Alle Datenverarbeitung erfolgt ausschliesslich auf Ihrem Gerat.</p></div>
+
+<h2>2. Auf dem Gerat gespeicherte Daten</h2>
+<p>Die App speichert folgende Einstellungen auf Ihrem Gerat (UserDefaults):</p>
+<ul>
+    <li><strong>Benutzername:</strong> Name auf den Wasserzeichen</li>
+    <li><strong>Geratemodell:</strong> Geratename auf den Wasserzeichen</li>
+    <li><strong>Anzeigeeinstellungen:</strong> Sichtbarkeit von GPS-Koordinaten und Datum/Uhrzeit</li>
+    <li><strong>Stileinstellungen:</strong> Auswahl des Filterstils</li>
+    <li><strong>Spracheinstellungen:</strong> Anzeigesprache der App</li>
+</ul>
+<p>Diese Daten werden niemals ausserhalb Ihres Gerats ubertragen. Das Loschen der App entfernt alle Daten.</p>
+
+<h2>3. Kamera- und Fotozugriff</h2>
+<p>Die App benotigt Zugriff auf Ihre Kamera und Fotomediathek, um Fotos aufzunehmen und mit Wasserzeichen versehene Fotos zu speichern. Fotos werden nur auf Ihrem Gerat verarbeitet.</p>
+
+<h2>4. Standortdaten</h2>
+<p>Die App verwendet Standortdaten, um GPS-Koordinaten auf Foto-Wasserzeichen anzuzeigen.</p>
+<div class="highlight"><p><strong>Wichtig:</strong> GPS-Koordinaten werden dauerhaft in die Wasserzeichen-Pixel eingebettet. Nach dem Speichern konnen sie weder durch Bildbearbeitung noch durch EXIF-Entfernung geloscht werden. Bitte seien Sie vorsichtig beim Teilen in sozialen Medien. Die GPS-Anzeige kann in den Einstellungen deaktiviert werden und ist standardmassig deaktiviert.</p></div>
+
+<h2>5. Netzwerkkommunikation</h2>
+<p>Die App fuhrt keinerlei Netzwerkkommunikation durch. Es werden keine Werbung, Analysetools oder Tracking-Tools verwendet.</p>
+
+<h2>6. Datenweitergabe an Dritte</h2>
+<p>Die App gibt keine Nutzerdaten an Dritte weiter, verkauft oder teilt sie.</p>
+
+<h2>7. Ihre Rechte (DSGVO)</h2>
+<p>Gemaess der Datenschutz-Grundverordnung (DSGVO) haben Sie Rechte bezuglich Ihrer personenbezogenen Daten. Da die App keine Daten ausserhalb Ihres Gerats erhebt oder speichert, gibt es keine Daten, die wir einsehen, berichtigen oder loschen konnten. Die Deinstallation der App entfernt alle lokal gespeicherten Einstellungen.</p>
+
+<h2>8. Impressum</h2>
+<ul>
+    <li><strong>Verantwortlicher:</strong> Minato Haruyama</li>
+    <li><strong>E-Mail:</strong> <a href="mailto:haruyama.3710@gmail.com">haruyama.3710@gmail.com</a></li>
+</ul>
+
+<h2>9. Kontakt</h2>
+<p>Bei Fragen zu dieser Datenschutzrichtlinie kontaktieren Sie uns bitte unter:</p>
+<ul>
+    <li><strong>E-Mail:</strong> <a href="mailto:haruyama.3710@gmail.com">haruyama.3710@gmail.com</a></li>
+</ul>
+</div>
+
+<!-- Italian -->
+<div class="lang-section" id="lang-it">
+<p>"Ano Camera" (di seguito "l'App") e progettata nel massimo rispetto della privacy degli utenti. La presente informativa sulla privacy spiega come vengono gestiti i dati nell'App.</p>
+
+<h2>1. Principio fondamentale</h2>
+<div class="highlight"><p>L'App non raccoglie ne trasmette alcun dato utente. Tutta l'elaborazione dei dati avviene esclusivamente sul dispositivo.</p></div>
+
+<h2>2. Dati memorizzati sul dispositivo</h2>
+<p>L'App memorizza le seguenti impostazioni sul dispositivo (UserDefaults):</p>
+<ul>
+    <li><strong>Nome utente:</strong> Nome visualizzato sulle filigrane</li>
+    <li><strong>Modello dispositivo:</strong> Nome del dispositivo visualizzato sulle filigrane</li>
+    <li><strong>Impostazioni di visualizzazione:</strong> Visibilita delle coordinate GPS e data/ora</li>
+    <li><strong>Impostazioni stile:</strong> Selezione dello stile del filtro</li>
+    <li><strong>Impostazioni lingua:</strong> Lingua di visualizzazione dell'app</li>
+</ul>
+<p>Questi dati non vengono mai trasmessi al di fuori del dispositivo. L'eliminazione dell'app rimuove tutti i dati.</p>
+
+<h2>3. Accesso a fotocamera e foto</h2>
+<p>L'App richiede l'accesso alla fotocamera e alla libreria foto per scattare foto e salvare foto con filigrana. Le foto vengono elaborate solo sul dispositivo.</p>
+
+<h2>4. Dati di localizzazione</h2>
+<p>L'App utilizza i dati di localizzazione per visualizzare le coordinate GPS sulle filigrane delle foto.</p>
+<div class="highlight"><p><strong>Importante:</strong> Le coordinate GPS vengono incorporate permanentemente nei pixel della filigrana. Una volta salvate, non possono essere rimosse tramite modifica dell'immagine o rimozione EXIF. Prestare attenzione durante la condivisione sui social media. La visualizzazione GPS puo essere disattivata nelle impostazioni ed e disattivata per impostazione predefinita.</p></div>
+
+<h2>5. Comunicazione di rete</h2>
+<p>L'App non effettua alcuna comunicazione di rete. Non vengono utilizzati pubblicita, strumenti di analisi o tracciamento.</p>
+
+<h2>6. Condivisione dati con terze parti</h2>
+<p>L'App non fornisce, vende o condivide dati utente con terze parti.</p>
+
+<h2>7. I vostri diritti (GDPR)</h2>
+<p>In conformita al Regolamento Generale sulla Protezione dei Dati (GDPR), avete diritti sui vostri dati personali. Poiche l'App non raccoglie dati al di fuori del dispositivo, non esistono dati da consultare, correggere o eliminare. La disinstallazione dell'app rimuove tutte le preferenze memorizzate localmente.</p>
+
+<h2>8. Contatto</h2>
+<p>Per domande su questa informativa sulla privacy:</p>
+<ul>
+    <li><strong>Email:</strong> <a href="mailto:haruyama.3710@gmail.com">haruyama.3710@gmail.com</a></li>
+</ul>
+</div>
+
+<!-- Korean -->
+<div class="lang-section" id="lang-ko">
+<p>"Ano Camera"(이하 "본 앱")는 사용자의 개인정보를 최대한 존중하여 설계되었습니다. 본 개인정보처리방침은 본 앱에서의 데이터 처리 방법에 대해 설명합니다.</p>
+
+<h2>1. 기본 원칙</h2>
+<div class="highlight"><p>본 앱은 사용자의 데이터를 일체 수집하거나 전송하지 않습니다. 모든 데이터 처리는 사용자의 기기에서만 이루어집니다.</p></div>
+
+<h2>2. 기기에 저장되는 데이터</h2>
+<p>본 앱은 다음 설정 정보를 기기 내(UserDefaults)에 저장합니다:</p>
+<ul>
+    <li><strong>사용자 이름:</strong> 워터마크에 표시되는 이름</li>
+    <li><strong>기기 모델명:</strong> 워터마크에 표시되는 기기 이름</li>
+    <li><strong>표시 설정:</strong> GPS 좌표 및 날짜/시간 표시 여부</li>
+    <li><strong>스타일 설정:</strong> 필터 스타일 선택</li>
+    <li><strong>언어 설정:</strong> 앱 내 표시 언어</li>
+</ul>
+<p>이 데이터는 기기 외부로 전송되지 않습니다. 앱을 삭제하면 모든 데이터가 제거됩니다.</p>
+
+<h2>3. 카메라 및 사진 접근</h2>
+<p>본 앱은 사진 촬영 및 워터마크가 적용된 사진 저장을 위해 카메라와 사진 라이브러리에 대한 접근 권한을 요청합니다. 사진은 기기에서만 처리되며 외부로 전송되지 않습니다.</p>
+
+<h2>4. 위치 정보</h2>
+<p>본 앱은 사진 워터마크에 GPS 좌표를 표시하기 위해 위치 정보를 사용합니다.</p>
+<div class="highlight"><p><strong>중요:</strong> GPS 좌표는 워터마크 픽셀에 영구적으로 삽입됩니다. 저장 후에는 이미지 편집이나 EXIF 삭제로 제거할 수 없습니다. SNS 공유 시 주의해 주세요. GPS 표시는 설정에서 비활성화할 수 있으며 기본적으로 비활성화되어 있습니다.</p></div>
+<p>위치 정보는 기기에서만 사용되며 외부 서버로 전송되지 않습니다.</p>
+
+<h2>5. 위치정보법 관련 고지</h2>
+<p>본 앱은 대한민국 「위치정보의 보호 및 이용 등에 관한 법률」에 따라 다음을 고지합니다:</p>
+<ul>
+    <li><strong>위치정보 수집 목적:</strong> 사진 워터마크에 GPS 좌표를 표시하기 위함 (선택적 기능)</li>
+    <li><strong>위치정보 보유 기간:</strong> 위치 정보는 즉시 처리되며, 앱에 별도로 저장하지 않습니다</li>
+    <li><strong>제3자 제공:</strong> 위치 정보를 제3자에게 제공하지 않습니다</li>
+    <li><strong>이용자 권리:</strong> 설정에서 언제든지 위치 정보 사용을 비활성화할 수 있습니다</li>
+</ul>
+
+<h2>6. 개인정보보호법(PIPA) 관련 고지</h2>
+<ul>
+    <li><strong>개인정보 처리 목적:</strong> 사진 워터마크 생성</li>
+    <li><strong>처리하는 개인정보 항목:</strong> 위치 정보 (선택), 사용자가 입력한 이름 및 기기명</li>
+    <li><strong>개인정보 보유 기간:</strong> 앱 삭제 시까지 (기기 내 저장만)</li>
+    <li><strong>개인정보 파기:</strong> 앱 삭제 시 자동 파기</li>
+    <li><strong>개인정보 보호책임자:</strong> Minato Haruyama (<a href="mailto:haruyama.3710@gmail.com">haruyama.3710@gmail.com</a>)</li>
+</ul>
+
+<h2>7. 네트워크 통신</h2>
+<p>본 앱은 어떠한 네트워크 통신도 수행하지 않습니다. 광고, 분석 도구 또는 추적 도구를 사용하지 않습니다.</p>
+
+<h2>8. 문의</h2>
+<p>본 개인정보처리방침에 관한 문의:</p>
+<ul>
+    <li><strong>이메일:</strong> <a href="mailto:haruyama.3710@gmail.com">haruyama.3710@gmail.com</a></li>
+</ul>
+</div>
+
+<!-- Traditional Chinese -->
+<div class="lang-section" id="lang-zh-Hant">
+<p>「Ano Camera」（以下簡稱「本應用程式」）在設計上充分尊重使用者的隱私。本隱私權政策說明本應用程式如何處理資料。</p>
+
+<h2>1. 基本原則</h2>
+<div class="highlight"><p>本應用程式不會收集或傳輸任何使用者資料。所有資料處理僅在您的裝置上進行。</p></div>
+
+<h2>2. 裝置上儲存的資料</h2>
+<p>本應用程式在您的裝置上儲存以下設定（UserDefaults）：</p>
+<ul>
+    <li><strong>使用者名稱：</strong>顯示在浮水印上的名稱</li>
+    <li><strong>裝置型號名稱：</strong>顯示在浮水印上的裝置名稱</li>
+    <li><strong>顯示設定：</strong>GPS座標和日期/時間的顯示/隱藏</li>
+    <li><strong>風格設定：</strong>濾鏡風格選擇</li>
+    <li><strong>語言設定：</strong>應用程式內顯示語言</li>
+</ul>
+<p>這些資料不會被傳輸到裝置外部。刪除應用程式將移除所有資料。</p>
+
+<h2>3. 相機和照片存取</h2>
+<p>本應用程式需要存取您的相機和照片圖庫，以拍攝照片並儲存帶有浮水印的照片。照片僅在您的裝置上處理。</p>
+
+<h2>4. 位置資料</h2>
+<p>本應用程式使用位置資料在照片浮水印上顯示GPS座標。</p>
+<div class="highlight"><p><strong>重要：</strong>GPS座標會永久嵌入浮水印像素中。儲存後無法通過圖片編輯或EXIF移除來刪除。在社群媒體分享時請注意。GPS顯示可在設定中停用，且預設為停用狀態。</p></div>
+
+<h2>5. 個人資料保護法（PDPA）相關告知</h2>
+<ul>
+    <li><strong>蒐集目的：</strong>產生照片浮水印</li>
+    <li><strong>資料類別：</strong>位置資訊（選擇性）、使用者輸入的名稱及裝置名稱</li>
+    <li><strong>利用期間：</strong>至應用程式刪除為止（僅儲存於裝置內）</li>
+    <li><strong>利用地區：</strong>僅限使用者裝置</li>
+    <li><strong>當事人權利：</strong>您可隨時在設定中停用位置資訊使用。刪除應用程式即可移除所有本機資料。</li>
+    <li><strong>聯絡方式：</strong><a href="mailto:haruyama.3710@gmail.com">haruyama.3710@gmail.com</a></li>
+</ul>
+
+<h2>6. 網路通訊</h2>
+<p>本應用程式不進行任何網路通訊。不使用廣告、分析工具或追蹤工具。</p>
+
+<h2>7. 聯絡方式</h2>
+<p>如對本隱私權政策有任何疑問：</p>
+<ul>
+    <li><strong>電子郵件：</strong><a href="mailto:haruyama.3710@gmail.com">haruyama.3710@gmail.com</a></li>
+</ul>
+</div>
+
+<!-- Simplified Chinese -->
+<div class="lang-section" id="lang-zh-Hans">
+<p>"Ano Camera"（以下简称"本应用"）在设计上充分尊重用户的隐私。本隐私政策说明本应用如何处理数据。</p>
+
+<h2>1. 基本原则</h2>
+<div class="highlight"><p>本应用不会收集或传输任何用户数据。所有数据处理仅在您的设备上进行。</p></div>
+
+<h2>2. 设备上存储的数据</h2>
+<p>本应用在您的设备上存储以下设置（UserDefaults）：</p>
+<ul>
+    <li><strong>用户名：</strong>显示在水印上的名称</li>
+    <li><strong>设备型号名称：</strong>显示在水印上的设备名称</li>
+    <li><strong>显示设置：</strong>GPS坐标和日期/时间的显示/隐藏</li>
+    <li><strong>风格设置：</strong>滤镜风格选择</li>
+    <li><strong>语言设置：</strong>应用内显示语言</li>
+</ul>
+<p>这些数据不会被传输到设备外部。删除应用将移除所有数据。</p>
+
+<h2>3. 相机和照片访问</h2>
+<p>本应用需要访问您的相机和照片图库，以拍摄照片并保存带有水印的照片。照片仅在您的设备上处理。</p>
+
+<h2>4. 位置数据</h2>
+<p>本应用使用位置数据在照片水印上显示GPS坐标。</p>
+<div class="highlight"><p><strong>重要：</strong>GPS坐标会永久嵌入水印像素中。保存后无法通过图片编辑或EXIF移除来删除。在社交媒体分享时请注意。GPS显示可在设置中停用，且默认为停用状态。</p></div>
+
+<h2>5. 网络通信</h2>
+<p>本应用不进行任何网络通信。不使用广告、分析工具或跟踪工具。</p>
+
+<h2>6. 第三方数据共享</h2>
+<p>本应用不向第三方提供、出售或共享用户数据。</p>
+
+<h2>7. 联系方式</h2>
+<p>如对本隐私政策有任何疑问：</p>
+<ul>
+    <li><strong>电子邮件：</strong><a href="mailto:haruyama.3710@gmail.com">haruyama.3710@gmail.com</a></li>
+</ul>
+</div>
+
+<!-- Thai -->
+<div class="lang-section" id="lang-th">
+<p>"Ano Camera" (ต่อไปนี้เรียกว่า "แอปพลิเคชัน") ได้รับการออกแบบโดยให้ความเคารพสูงสุดต่อความเป็นส่วนตัวของผู้ใช้ นโยบายความเป็นส่วนตัวนี้อธิบายวิธีการจัดการข้อมูลภายในแอปพลิเคชัน</p>
+
+<h2>1. หลักการพื้นฐาน</h2>
+<div class="highlight"><p>แอปพลิเคชันไม่เก็บรวบรวมหรือส่งข้อมูลผู้ใช้ใดๆ การประมวลผลข้อมูลทั้งหมดเกิดขึ้นบนอุปกรณ์ของคุณเท่านั้น</p></div>
+
+<h2>2. ข้อมูลที่จัดเก็บบนอุปกรณ์</h2>
+<p>แอปพลิเคชันจัดเก็บการตั้งค่าต่อไปนี้บนอุปกรณ์ของคุณ (UserDefaults):</p>
+<ul>
+    <li><strong>ชื่อผู้ใช้:</strong> ชื่อที่แสดงบนลายน้ำ</li>
+    <li><strong>ชื่อรุ่นอุปกรณ์:</strong> ชื่ออุปกรณ์ที่แสดงบนลายน้ำ</li>
+    <li><strong>การตั้งค่าการแสดงผล:</strong> การแสดง/ซ่อนพิกัด GPS และวันที่/เวลา</li>
+    <li><strong>การตั้งค่าสไตล์:</strong> การเลือกสไตล์ฟิลเตอร์</li>
+    <li><strong>การตั้งค่าภาษา:</strong> ภาษาที่แสดงในแอป</li>
+</ul>
+<p>ข้อมูลเหล่านี้จะไม่ถูกส่งออกนอกอุปกรณ์ของคุณ การลบแอปจะลบข้อมูลทั้งหมด</p>
+
+<h2>3. การเข้าถึงกล้องและรูปถ่าย</h2>
+<p>แอปพลิเคชันขอเข้าถึงกล้องและคลังภาพถ่ายเพื่อถ่ายภาพและบันทึกภาพที่มีลายน้ำ ภาพถ่ายจะถูกประมวลผลบนอุปกรณ์ของคุณเท่านั้น</p>
+
+<h2>4. ข้อมูลตำแหน่งที่ตั้ง</h2>
+<p>แอปพลิเคชันใช้ข้อมูลตำแหน่งที่ตั้งเพื่อแสดงพิกัด GPS บนลายน้ำของภาพถ่าย</p>
+<div class="highlight"><p><strong>สำคัญ:</strong> พิกัด GPS จะถูกฝังลงในพิกเซลลายน้ำอย่างถาวร เมื่อบันทึกแล้วจะไม่สามารถลบออกได้ด้วยการแก้ไขภาพหรือการลบ EXIF กรุณาระวังเมื่อแชร์บนโซเชียลมีเดีย การแสดง GPS สามารถปิดได้ในการตั้งค่าและปิดเป็นค่าเริ่มต้น</p></div>
+
+<h2>5. การแจ้งตาม พ.ร.บ. คุ้มครองข้อมูลส่วนบุคคล (PDPA)</h2>
+<ul>
+    <li><strong>วัตถุประสงค์ในการเก็บรวบรวม:</strong> สร้างลายน้ำบนภาพถ่าย</li>
+    <li><strong>ข้อมูลที่ประมวลผล:</strong> ข้อมูลตำแหน่งที่ตั้ง (ทางเลือก), ชื่อและชื่ออุปกรณ์ที่ผู้ใช้ป้อน</li>
+    <li><strong>ฐานทางกฎหมาย:</strong> ความยินยอมของผู้ใช้</li>
+    <li><strong>ระยะเวลาการเก็บรักษา:</strong> จนกว่าจะลบแอปพลิเคชัน (จัดเก็บบนอุปกรณ์เท่านั้น)</li>
+    <li><strong>สิทธิของเจ้าของข้อมูล:</strong> คุณสามารถปิดการใช้ตำแหน่งที่ตั้งในการตั้งค่าได้ตลอดเวลา การลบแอปจะลบข้อมูลในเครื่องทั้งหมด</li>
+    <li><strong>ช่องทางติดต่อ:</strong> <a href="mailto:haruyama.3710@gmail.com">haruyama.3710@gmail.com</a></li>
+</ul>
+
+<h2>6. การสื่อสารทางเครือข่าย</h2>
+<p>แอปพลิเคชันไม่ทำการสื่อสารทางเครือข่ายใดๆ ไม่มีการใช้โฆษณา เครื่องมือวิเคราะห์ หรือเครื่องมือติดตาม</p>
+
+<h2>7. ติดต่อ</h2>
+<p>หากมีคำถามเกี่ยวกับนโยบายความเป็นส่วนตัวนี้:</p>
+<ul>
+    <li><strong>อีเมล:</strong> <a href="mailto:haruyama.3710@gmail.com">haruyama.3710@gmail.com</a></li>
+</ul>
+</div>
+
+    </div><!-- .content -->
+</div><!-- .container -->
+
+<footer>
+    <p>&copy; 2026 Ano Camera. All rights reserved.</p>
+</footer>
+
+<script>
+const i18n = {
+    ja: { back: 'トップページに戻る', title: 'プライバシーポリシー', updated: '最終更新日: 2026年2月10日' },
+    en: { back: 'Back to Top', title: 'Privacy Policy', updated: 'Last updated: February 10, 2026' },
+    fr: { back: 'Retour', title: 'Politique de confidentialite', updated: 'Derniere mise a jour : 10 fevrier 2026' },
+    de: { back: 'Zuruck', title: 'Datenschutzrichtlinie', updated: 'Letzte Aktualisierung: 10. Februar 2026' },
+    it: { back: 'Torna indietro', title: 'Informativa sulla Privacy', updated: 'Ultimo aggiornamento: 10 febbraio 2026' },
+    ko: { back: '돌아가기', title: '개인정보처리방침', updated: '최종 업데이트: 2026년 2월 10일' },
+    'zh-Hant': { back: '返回', title: '隱私權政策', updated: '最後更新：2026年2月10日' },
+    'zh-Hans': { back: '返回', title: '隐私政策', updated: '最后更新：2026年2月10日' },
+    th: { back: 'กลับ', title: 'นโยบายความเป็นส่วนตัว', updated: 'อัปเดตล่าสุด: 10 กุมภาพันธ์ 2569' }
+};
+
+function setLang(lang) {
+    document.querySelectorAll('.lang-section').forEach(s => s.classList.remove('active'));
+    document.getElementById('lang-' + lang).classList.add('active');
+    document.querySelectorAll('.lang-switcher button').forEach(b => {
+        b.classList.toggle('active', b.getAttribute('data-lang') === lang);
+    });
+    const t = i18n[lang] || i18n['en'];
+    document.querySelectorAll('[data-i18n]').forEach(el => {
+        const key = el.getAttribute('data-i18n');
+        if (t[key]) el.textContent = t[key];
+    });
+    document.documentElement.lang = lang;
+    localStorage.setItem('ano_camera_lang', lang);
+}
+
+(function() {
+    const saved = localStorage.getItem('ano_camera_lang');
+    if (saved && document.getElementById('lang-' + saved)) { setLang(saved); return; }
+    const nav = navigator.language || 'en';
+    const map = { ja:'ja', en:'en', fr:'fr', de:'de', it:'it', ko:'ko', th:'th' };
+    if (nav.startsWith('zh-Hant') || nav === 'zh-TW' || nav === 'zh-HK') { setLang('zh-Hant'); return; }
+    if (nav.startsWith('zh')) { setLang('zh-Hans'); return; }
+    const prefix = nav.substring(0, 2);
+    setLang(map[prefix] || 'en');
+})();
+</script>
+</body>
+</html>
