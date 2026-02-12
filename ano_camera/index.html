@@ -392,6 +392,8 @@ function setLang(lang) {
 }
 
 (function() {
+    var urlParam = new URLSearchParams(window.location.search).get('lang');
+    if (urlParam && document.getElementById('lang-' + urlParam)) { setLang(urlParam); return; }
     var saved = localStorage.getItem('ano_camera_lang');
     if (saved && document.getElementById('lang-' + saved)) { setLang(saved); return; }
     var nav = navigator.language || 'en';
